@@ -1,97 +1,128 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+# Strapi Starter Next Blog
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+Next starter for creating a blog with Strapi.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+This starter allows you to try Strapi with Next.js with the example of a simple blog. It is fully customizable and due to the fact that it is open source, fully open to contributions. Do not hesitate to add new features etc ...
 
-## 🚀 Quick start
+You may want to know how to develop such a starter by your own! This starter is actually the result of this [tutorial](https://strapi.io/blog/build-a-blog-with-next-react-js-strapi-and-apollo)
 
-1.  **Create a Gatsby site.**
+![screenshot image](/screenshot.png)
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+### Deploy the backend
 
-    ```sh
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+To deploy this Strapi instance you'll need:
 
-1.  **Start developing.**
+- [A Heroku account](https://signup.heroku.com/) for free
+- [A Cloudinary account for saving images](https://cloudinary.com/users/register/free) for free
 
-    Navigate into your new site’s directory and start it up.
+Once you have created these accounts you can deploy your instance by clicking on this button
 
-    ```sh
-    cd my-default-starter/
-    gatsby develop
-    ```
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/strapi/strapi-starter-next-blog)
 
-1.  **Open the source code and start editing!**
+### Deploy the frontend
 
-    Your site is now running at `http://localhost:8000`!
+**Vercel**
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+  - Log in to Vercel by installing now CLI:
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+  `npm i -g now`
 
-## 🧐 What's inside?
+  - Secure your `API_URL` with now by running the following command:
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+  `now secret add api-url <https://your-strapi-instance.herokuapp.com>`
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+You can deploy your app and for this you have two options. But for each one of them, just press enter when the root directory of your code is asked.
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+  - Execute `now`
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+  - Or you can simply click on the following button
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/strapi/strapi-starter-next-blog)
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+**Netlify**
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+To deploy this Strapi instance you'll need:
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+  - [A Netlify account](https://app.netlify.com/signup) for free
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+Once you have created your account you can deploy your instance by clicking on this button.
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+[![Deploy](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/strapi/strapi-starter-next-blog)
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+  - Select a repository name and fill API_URL with the url of your Strapi instance on Heroku (eg: https://your-app.herokuapp.com) without the trailing slash
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+### Features
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+  - 2 Content types: Article, Category
+  - 2 Created articles
+  - 3 Created categories
+  - Permissions set to `true` for article and category
+  - Responsive design using UIkit
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+### Pages
 
-## 🎓 Learning Gatsby
+  - "/" display every articles
+  - "/article/:id" display one article
+  - "/category/:id" display articles depending on the category
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+### Getting started
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+**Clone the repository and install dependencies**
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+```bash
+git clone https://github.com/strapi/strapi-starter-next-blog.git
+cd strapi-starter-next-blog
 
-## 💫 Deploy
+# Using yarn
+yarn setup:yarn
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+# Using npm
+npm run setup:npm
+```
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+### Scaffold your project
+
+This command will launch both of your backend and frontend servers and do a data migration in your backend server
+
+```bash
+# Using yarn
+yarn build:yarn
+yarn develop:yarn
+
+# Using npm
+npm run build:npm
+npm run develop:npm
+```
+
+Alternatively, you can still start your servers separately:
+
+### Start the backend server
+
+```bash
+cd backend
+
+# Using yarn
+yarn build
+yarn develop
+
+# Using npm
+npm run build
+npm run develop
+```
+
+### Start the frontend server
+
+```bash
+cd frontend
+
+# Using yarn
+yarn develop
+
+# Using npm
+npm run develop
+```
+
+Next server is running here => [http://localhost:3000](http://localhost:3000)
+Strapi server is running here => [http://localhost:1337](http://localhost:1337)
+
+Enjoy this starter
