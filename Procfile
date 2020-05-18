@@ -1,1 +1,1 @@
-web: yarn setup:yarn:frontend && yarn build:yarn:frontend
+web: yarn setup:yarn:frontend && yarn build:yarn
