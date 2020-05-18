@@ -1,1 +1,1 @@
-web: yarn setup:yarn:frontend && yarn build:yarn
+web: cd frontend && yarn install && yarn start
