@@ -4,9 +4,8 @@
   "private": true,
   "scripts": {
     "develop": "next dev",
-    "build": "next build",
+    "build": "next start",
     "start": "next start",
-    "default": "yarn && next start"
   },
   "dependencies": {
     "moment": "^2.24.0",
