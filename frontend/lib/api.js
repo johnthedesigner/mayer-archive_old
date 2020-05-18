@@ -1,3 +1,5 @@
+import fetch from 'node-fetch'
+
 async function fetchAPI(query, { variables } = {}) {
   const res = await fetch(`${process.env.API_URL}/graphql`, {
     method: 'POST',
