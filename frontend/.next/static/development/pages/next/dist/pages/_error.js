@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/_error.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/next/dist/pages/_error.js"],{
 
 /***/ "./node_modules/@babel/runtime/helpers/arrayLikeToArray.js":
 /*!*****************************************************************!*\
@@ -165,14 +165,14 @@ eval("var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray */ \"./n
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_error&absolutePagePath=next%2Fdist%2Fpages%2F_error&hotRouterUpdates=false!./":
-/*!**********************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_error&absolutePagePath=next%2Fdist%2Fpages%2F_error&hotRouterUpdates=false ***!
-  \**********************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=%2FUsers%2Fjohn%2FRepos%2Fmayer-archive%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Fpages%2F_error.js&hotRouterUpdates=false!./":
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=%2FUsers%2Fjohn%2FRepos%2Fmayer-archive%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Fpages%2F_error.js&hotRouterUpdates=false ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("\n    (window.__NEXT_P = window.__NEXT_P || []).push([\n      \"/_error\",\n      function () {\n        var mod = __webpack_require__(/*! next/dist/pages/_error */ \"./node_modules/next/dist/pages/_error.js\");\n        if (false) {}\n        return mod;\n      }\n    ]);\n  //# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LWNsaWVudC1wYWdlcy1sb2FkZXIuanM/ZmEzYSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQ0E7QUFDQTtBQUNBO0FBQ0Esa0JBQWtCLG1CQUFPLENBQUMsd0VBQXdCO0FBQ2xELFlBQVksS0FBbUIsRUFBRSxFQU14QjtBQUNUO0FBQ0E7QUFDQSIsImZpbGUiOiIuL25vZGVfbW9kdWxlcy9uZXh0L2Rpc3QvYnVpbGQvd2VicGFjay9sb2FkZXJzL25leHQtY2xpZW50LXBhZ2VzLWxvYWRlci5qcz9wYWdlPSUyRl9lcnJvciZhYnNvbHV0ZVBhZ2VQYXRoPW5leHQlMkZkaXN0JTJGcGFnZXMlMkZfZXJyb3ImaG90Um91dGVyVXBkYXRlcz1mYWxzZSEuLy5qcyIsInNvdXJjZXNDb250ZW50IjpbIlxuICAgICh3aW5kb3cuX19ORVhUX1AgPSB3aW5kb3cuX19ORVhUX1AgfHwgW10pLnB1c2goW1xuICAgICAgXCIvX2Vycm9yXCIsXG4gICAgICBmdW5jdGlvbiAoKSB7XG4gICAgICAgIHZhciBtb2QgPSByZXF1aXJlKFwibmV4dC9kaXN0L3BhZ2VzL19lcnJvclwiKTtcbiAgICAgICAgaWYgKGZhbHNlICYmIG1vZHVsZS5ob3QpIHtcbiAgICAgICAgICBtb2R1bGUuaG90LmFjY2VwdChcIm5leHQvZGlzdC9wYWdlcy9fZXJyb3JcIiwgZnVuY3Rpb24gKCkge1xuICAgICAgICAgICAgaWYgKCFuZXh0LnJvdXRlci5jb21wb25lbnRzW1wiL19lcnJvclwiXSkgcmV0dXJuO1xuICAgICAgICAgICAgdmFyIHVwZGF0ZWRQYWdlID0gcmVxdWlyZShcIm5leHQvZGlzdC9wYWdlcy9fZXJyb3JcIik7XG4gICAgICAgICAgICBuZXh0LnJvdXRlci51cGRhdGUoXCIvX2Vycm9yXCIsIHVwZGF0ZWRQYWdlKTtcbiAgICAgICAgICB9KTtcbiAgICAgICAgfVxuICAgICAgICByZXR1cm4gbW9kO1xuICAgICAgfVxuICAgIF0pO1xuICAiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_error&absolutePagePath=next%2Fdist%2Fpages%2F_error&hotRouterUpdates=false!./\n");
+eval("\n    (window.__NEXT_P = window.__NEXT_P || []).push([\n      \"/next/dist/pages/_error\",\n      function () {\n        var mod = __webpack_require__(/*! ./node_modules/next/dist/pages/_error.js */ \"./node_modules/next/dist/pages/_error.js\");\n        if (false) {}\n        return mod;\n      }\n    ]);\n  //# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LWNsaWVudC1wYWdlcy1sb2FkZXIuanM/MjMyOSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQ0E7QUFDQTtBQUNBO0FBQ0Esa0JBQWtCLG1CQUFPLENBQUMsMEZBQWlGO0FBQzNHLFlBQVksS0FBbUIsRUFBRSxFQU14QjtBQUNUO0FBQ0E7QUFDQSIsImZpbGUiOiIuL25vZGVfbW9kdWxlcy9uZXh0L2Rpc3QvYnVpbGQvd2VicGFjay9sb2FkZXJzL25leHQtY2xpZW50LXBhZ2VzLWxvYWRlci5qcz9wYWdlPSUyRm5leHQlMkZkaXN0JTJGcGFnZXMlMkZfZXJyb3ImYWJzb2x1dGVQYWdlUGF0aD0lMkZVc2VycyUyRmpvaG4lMkZSZXBvcyUyRm1heWVyLWFyY2hpdmUlMkZmcm9udGVuZCUyRm5vZGVfbW9kdWxlcyUyRm5leHQlMkZkaXN0JTJGcGFnZXMlMkZfZXJyb3IuanMmaG90Um91dGVyVXBkYXRlcz1mYWxzZSEuLy5qcyIsInNvdXJjZXNDb250ZW50IjpbIlxuICAgICh3aW5kb3cuX19ORVhUX1AgPSB3aW5kb3cuX19ORVhUX1AgfHwgW10pLnB1c2goW1xuICAgICAgXCIvbmV4dC9kaXN0L3BhZ2VzL19lcnJvclwiLFxuICAgICAgZnVuY3Rpb24gKCkge1xuICAgICAgICB2YXIgbW9kID0gcmVxdWlyZShcIi9Vc2Vycy9qb2huL1JlcG9zL21heWVyLWFyY2hpdmUvZnJvbnRlbmQvbm9kZV9tb2R1bGVzL25leHQvZGlzdC9wYWdlcy9fZXJyb3IuanNcIik7XG4gICAgICAgIGlmIChmYWxzZSAmJiBtb2R1bGUuaG90KSB7XG4gICAgICAgICAgbW9kdWxlLmhvdC5hY2NlcHQoXCIvVXNlcnMvam9obi9SZXBvcy9tYXllci1hcmNoaXZlL2Zyb250ZW5kL25vZGVfbW9kdWxlcy9uZXh0L2Rpc3QvcGFnZXMvX2Vycm9yLmpzXCIsIGZ1bmN0aW9uICgpIHtcbiAgICAgICAgICAgIGlmICghbmV4dC5yb3V0ZXIuY29tcG9uZW50c1tcIi9uZXh0L2Rpc3QvcGFnZXMvX2Vycm9yXCJdKSByZXR1cm47XG4gICAgICAgICAgICB2YXIgdXBkYXRlZFBhZ2UgPSByZXF1aXJlKFwiL1VzZXJzL2pvaG4vUmVwb3MvbWF5ZXItYXJjaGl2ZS9mcm9udGVuZC9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L3BhZ2VzL19lcnJvci5qc1wiKTtcbiAgICAgICAgICAgIG5leHQucm91dGVyLnVwZGF0ZShcIi9uZXh0L2Rpc3QvcGFnZXMvX2Vycm9yXCIsIHVwZGF0ZWRQYWdlKTtcbiAgICAgICAgICB9KTtcbiAgICAgICAgfVxuICAgICAgICByZXR1cm4gbW9kO1xuICAgICAgfVxuICAgIF0pO1xuICAiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=%2FUsers%2Fjohn%2FRepos%2Fmayer-archive%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Fpages%2F_error.js&hotRouterUpdates=false!./\n");
 
 /***/ }),
 
@@ -270,6 +270,18 @@ eval("module.exports = function(module) {\n\tif (!module.webpackPolyfill) {\n\t\
 
 /***/ }),
 
+/***/ 1:
+/*!***********************************************************************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=%2FUsers%2Fjohn%2FRepos%2Fmayer-archive%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Fpages%2F_error.js&hotRouterUpdates=false ***!
+  \***********************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=%2FUsers%2Fjohn%2FRepos%2Fmayer-archive%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Fpages%2F_error.js&hotRouterUpdates=false! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=%2FUsers%2Fjohn%2FRepos%2Fmayer-archive%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Fpages%2F_error.js&hotRouterUpdates=false!./");
+
+
+/***/ }),
+
 /***/ "dll-reference dll_2adc2403d89adc16ead0":
 /*!*******************************************!*\
   !*** external "dll_2adc2403d89adc16ead0" ***!
@@ -281,4 +293,4 @@ eval("module.exports = dll_2adc2403d89adc16ead0;//# sourceURL=[module]\n//# sour
 
 /***/ })
 
-},[["./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_error&absolutePagePath=next%2Fdist%2Fpages%2F_error&hotRouterUpdates=false!./","static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
