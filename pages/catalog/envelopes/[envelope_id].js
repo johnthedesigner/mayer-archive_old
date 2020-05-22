@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import _ from 'lodash'
 
-import { getEnvelope, getEnvelopes } from '../../lib/api'
+import { getEnvelope, getEnvelopes } from '../../../lib/api'
 
 const ImageList = ({images}) => {
   let list = _.orderBy(images, 'image_id', 'asc').map(image => {

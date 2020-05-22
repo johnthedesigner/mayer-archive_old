@@ -11,7 +11,7 @@ const ImageDetail = (image) => {
         </h1>
 
         <h3>{image.image_id}</h3>
-        <h4><b>Envelope: </b>{image.envelope_id.envelope_id}</h4>
+        <h4><b>Envelope: </b>{image.image_id.split('-')[0]}</h4>
 
     </div>
   )
@@ -20,12 +20,17 @@ const ImageDetail = (image) => {
 export async function getStaticPaths() {
   const images = (await getImages()) || []
   return {
-    paths: images.map(image => ({
-      params: {
-        image_id: image.image_id,
-        envelope_id: image.envelope_id ? image.envelope_id.envelope_id : ""
-      },
-    })),
+    paths: images.map(image => {
+      let envelope_id = image.image_id.split('-')[0]
+      return (
+        {
+          params: {
+            image_id: image.image_id,
+            envelope_id
+          },
+        }
+      )
+    }),
     fallback: false,
   }
 }
