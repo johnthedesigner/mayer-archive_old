@@ -3,11 +3,24 @@ import _ from 'lodash'
 
 import { getEnvelopes } from '../lib/api'
 
-const EnvelopeList = ({envelopes}) => {
-  console.log(envelopes)
-  let list = envelopes.map((envelope, index) => {
+const ImageList = ({images}) => {
+  let list = images.map(image => {
     return (
-      <li key={envelope.envelope_id}>{envelope.envelope_id}</li>
+      <li key={image.image_id}>{image.image_id}</li>
+    )
+  })
+  return list
+}
+
+const EnvelopeList = ({envelopes}) => {
+  let list = _.orderBy(envelopes, 'envelope_id', 'asc').map(envelope => {
+    return (
+      <li key={envelope.envelope_id}>
+        <b>{envelope.envelope_id}</b>
+        <ul>
+          <ImageList images={envelope.images}/>
+        </ul>
+      </li>
     )
   })
   return list
