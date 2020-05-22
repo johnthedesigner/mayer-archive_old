@@ -1,9 +1,12 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import _ from 'lodash'
 
 import { getImage, getImages } from '../../../lib/api'
 
 const ImageDetail = (image) => {
+  let envelope_id = image.image_id.split('-')[0]
+
   return (
     <div className="container">
         <h1 className="title">
@@ -11,7 +14,12 @@ const ImageDetail = (image) => {
         </h1>
 
         <h3>{image.image_id}</h3>
-        <h4><b>Envelope: </b>{image.image_id.split('-')[0]}</h4>
+        <h4>
+          <b>Envelope: </b>
+          <Link href={`/catalog/envelopes/${envelope_id}`}>
+            <a>{envelope_id}</a>
+          </Link>
+        </h4>
 
     </div>
   )

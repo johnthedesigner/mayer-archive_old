@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import _ from 'lodash'
 
 import { getEnvelope, getEnvelopes } from '../../../lib/api'
@@ -6,7 +7,11 @@ import { getEnvelope, getEnvelopes } from '../../../lib/api'
 const ImageList = ({images}) => {
   let list = _.orderBy(images, 'image_id', 'asc').map(image => {
     return (
-      <li key={image.image_id}>{image.image_id}</li>
+      <li key={image.image_id}>
+        <Link href={`/catalog/images/${image.image_id}`}>
+          <a>{image.image_id}</a>
+        </Link>
+      </li>
     )
   })
   return list
