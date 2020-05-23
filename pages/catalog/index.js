@@ -1,10 +1,11 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import _ from 'lodash'
+import Head from "next/head";
+import Link from "next/link";
+import _ from "lodash";
 
-import { getEnvelopes } from '../../lib/api'
+import { getEnvelopes } from "../../lib/api";
+import Header from "../../components/Header";
 
-const ImageList = ({images}) => {
+const ImageList = ({ images }) => {
   let list = images.map(image => {
     return (
       <li key={image.image_id}>
@@ -12,13 +13,13 @@ const ImageList = ({images}) => {
           <a>{image.image_id}</a>
         </Link>
       </li>
-    )
-  })
-  return list
-}
+    );
+  });
+  return list;
+};
 
-const EnvelopeList = ({envelopes}) => {
-  let list = _.orderBy(envelopes, 'envelope_id', 'asc').map(envelope => {
+const EnvelopeList = ({ envelopes }) => {
+  let list = _.orderBy(envelopes, "envelope_id", "asc").map(envelope => {
     return (
       <li key={envelope.envelope_id}>
         <b>
@@ -27,41 +28,39 @@ const EnvelopeList = ({envelopes}) => {
           </Link>
         </b>
         <ul>
-          <ImageList images={envelope.images}/>
+          <ImageList images={envelope.images} />
         </ul>
       </li>
-    )
-  })
-  return list
-}
+    );
+  });
+  return list;
+};
 
-const CatalogHome = (envelopes) => {
+const CatalogHome = envelopes => {
   return (
     <div className="container">
-        <h1 className="title">
-          The Catalog Homepage
-        </h1>
+      <Header />
+      <h1 className="title">The Catalog Homepage</h1>
 
-        <hr/>
+      <hr />
 
-        <h2>MAP</h2>
+      <h2>MAP</h2>
 
-        <hr/>
+      <hr />
 
-        <h3>Envelopes</h3>
-        <ul>
-          <EnvelopeList envelopes={envelopes.envelopes}/>
-        </ul>
-
+      <h3>Envelopes</h3>
+      <ul>
+        <EnvelopeList envelopes={envelopes.envelopes} />
+      </ul>
     </div>
-  )
-}
+  );
+};
 
 export async function getStaticProps() {
-  const envelopes = (await getEnvelopes()) || []
+  const envelopes = (await getEnvelopes()) || [];
   return {
-    props: { envelopes },
-  }
+    props: { envelopes }
+  };
 }
 
-export default CatalogHome
+export default CatalogHome;

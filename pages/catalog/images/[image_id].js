@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import _ from "lodash";
 
+import Header from "../../../components/Header";
 import Image from "../../../components/image";
 
 import { getImage, getImages, getEnvelope } from "../../../lib/api";
@@ -13,6 +14,7 @@ const ImageDetail = ({ envelope, image }) => {
 
   return (
     <div className="container">
+      <Header />
       <h1 className="title">Hello world!</h1>
 
       <h3>{image_id}</h3>
