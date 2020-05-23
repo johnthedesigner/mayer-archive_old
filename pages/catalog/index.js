@@ -42,6 +42,13 @@ const CatalogHome = (envelopes) => {
           The Catalog Homepage
         </h1>
 
+        <hr/>
+
+        <h2>MAP</h2>
+
+        <hr/>
+
+        <h3>Envelopes</h3>
         <ul>
           <EnvelopeList envelopes={envelopes.envelopes}/>
         </ul>
