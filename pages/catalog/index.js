@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import _ from "lodash";
 
-import { getEnvelopes } from "../../lib/api";
+import { getDigitizedEnvelopes } from "../../lib/api";
 import Header from "../../components/Header";
 
 const ImageList = ({ images }) => {
@@ -57,7 +57,7 @@ const CatalogHome = envelopes => {
 };
 
 export async function getStaticProps() {
-  const envelopes = (await getEnvelopes()) || [];
+  const envelopes = (await getDigitizedEnvelopes()) || [];
   return {
     props: { envelopes }
   };
