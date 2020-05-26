@@ -3,7 +3,7 @@ import Link from "next/link";
 import _ from "lodash";
 
 import Header from "../../../components/Header";
-import Image from "../../../components/image";
+import Image from "../../../components/Image";
 
 import { getImage, getImages, getEnvelope } from "../../../lib/api";
 
