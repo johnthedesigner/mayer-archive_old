@@ -2,18 +2,18 @@
 export const rem = 8;
 
 // generate number of pixels as a rem-scaled px string
-export const px = units => units * rem + "px";
+export const rempx = units => units * rem + "px";
 
 // Build an array of flexible spacing variables
 export const space = {
-  0: px(0.125),
-  1: px(0.25),
-  2: px(0.5),
-  3: px(1),
-  4: px(1.5),
-  5: px(2),
-  6: px(3),
-  7: px(5)
+  0: rempx(0.125),
+  1: rempx(0.25),
+  2: rempx(0.5),
+  3: rempx(1),
+  4: rempx(1.5),
+  5: rempx(2),
+  6: rempx(3),
+  7: rempx(5)
 };
 
-export const baseFontSize = px(2.5);
+export const baseFontSize = rempx(2.5);

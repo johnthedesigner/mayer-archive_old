@@ -5,6 +5,7 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 
 import color from "../components/_color";
 import { baseFontSize, px, space } from "../components/_scale";
+import { typeStyles } from "../components/_type";
 
 class MyDocument extends Document {
   render() {
@@ -18,9 +19,7 @@ class MyDocument extends Document {
         </Head>
         <Global
           styles={{
-            h1: {
-              fontFamily: "Montserrat, sans-serif"
-            },
+            h1: typeStyles.majorTitle,
             a: {
               color: color.aqua[4],
               transition: "all linear .1s"
