@@ -47,11 +47,16 @@ const ImageDetail = ({ envelope, image, nextImage, prevImage }) => {
           />
         </a>
       </Link>
+
       <h4>
         <b>Envelope: </b>
         <Link href={`/catalog/envelopes/${envelope_id}`}>
           <a>{envelope_id}</a>
         </Link>
+      </h4>
+      <h4>
+        <b>Date Developed: </b>
+        {image.envelope.date_developed}
       </h4>
     </div>
   );
