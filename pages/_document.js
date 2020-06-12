@@ -5,7 +5,7 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 
 import color from "../components/_color";
 import { baseFontSize, px, space } from "../components/_scale";
-import { typeStyles } from "../components/_type";
+import { fontFamily } from "../components/_type";
 
 class MyDocument extends Document {
   render() {
@@ -13,19 +13,32 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,600&family=Taviraj:ital,wght@0,400;0,700;1,400;1,700&display=swap"
             rel="stylesheet"
           />
         </Head>
         <Global
           styles={{
-            h1: typeStyles.majorTitle,
+            "h1, h2, h3, h4, h5, h6": {
+              fontFamily: fontFamily.serif,
+              fontWeight: 700,
+              lineHeight: 1.25
+            },
+            "h3, h4, h5, h6": {
+              fontFamily: fontFamily.serif,
+              fontWeight: 400,
+              lineHeight: 1.5
+            },
+            p: {
+              fontFamily: fontFamily.serif,
+              lineHeight: 1.5
+            },
             a: {
-              color: color.aqua[4],
+              color: color.blue[4],
               transition: "all linear .1s"
             },
             "a:hover": {
-              color: color.aqua[2]
+              color: color.blue[2]
             }
           }}
         />
@@ -33,9 +46,9 @@ class MyDocument extends Document {
           css={{
             padding: 0,
             margin: 0,
-            fontFamily: "Nunito Sans, sans-serif",
+            fontFamily: fontFamily.serif,
             fontSize: baseFontSize,
-            color: color.gray[11]
+            color: color.gray[6]
           }}
         >
           <Main />

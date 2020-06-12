@@ -1,14 +1,14 @@
 import { rempx } from "./_scale";
 
 export const fontFamily = {
-  montserrat: "Montserrat, sans-serif",
-  nunito: "Nunito Sans, sans-serif",
-  unna: "Unna, serif"
+  serif: "Taviraj, sans-serif",
+  sans: "Poppins, sans-serif"
 };
 
 export const typeStyles = {
   majorTitle: {
-    fontFamily: fontFamily.montserrat,
-    fontSize: rempx(10)
+    fontFamily: fontFamily.taviraj,
+    fontSize: rempx(10),
+    fontWeight: 700
   }
 };
